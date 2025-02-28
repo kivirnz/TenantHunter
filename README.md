@@ -1,7 +1,7 @@
 # TenantHunter
 A small Python tool which resolves domains to Azure tenant IDs and login portals
 
-# Description
+## Description
 TenantHunter is a small script to resolve domains to Azure AD tenants (and OAuth login portals)\
 It is incredibly useful for pentesting companies or governments powered by the Azure ecosystem
 
@@ -10,31 +10,31 @@ Features:
 - **Resolves tenant ID to OAuth login portal**
 - **More upcoming features but for now that's it**
 
-# Requirements
+## Requirements
 Python 3\
 requests\
 argparse\
 sys\
 termcolor\
 re\
-pyfiglet\
+pyfiglet
 
 You can install all of the dependencies by cloning the repository and running: ```pip install -r requirements.txt```
 
-# Usage
+## Usage
 Run normally: ```python3 tenanthunter.py -t example.com```\
 Run in minimised mode (excludes full response): ```python3 tenanthunter.py -mt example.com```
 
-# Arguments
+## Arguments
 - ```-t``` or ```--domain``` | Specifies the domain to find the tenant ID of
 - ```-m``` or ```--minimal``` | Tells the script to run in minimal mode (excludes full response)
 
-# To Do
+## To Do
 - Subdomain enumeration (Use crt.sh to find subdomains for the TLD and enumerate all of those to tenant IDs too)
 - Save to file (Saves the results to a file)
 
-# Disclaimer
+## Disclaimer
 This is to be used for educational purposes only blah blah (insert boilerplate shite here)
 
-# License
+## License
 This code was proudly written and published under the <a href=https://plusnigger.org>+NIGGER license</a>, a modified version of Daddy Stallmans <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GPL v3 license</a>
